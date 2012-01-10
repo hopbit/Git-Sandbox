@@ -2,3 +2,19 @@ http://www.vogella.de/articles/EGit/article.html
 
 Utknąłem na 
 7.3. Push project to Github 
+
+
+zapisuję linki to-read:
+http://www.habdas.org/2011/11/21/push-upstream-with-egit-and-eclipse-indigo/ 
+
+
+
+user guides:
+http://stackoverflow.com/questions/3601805/auth-problem-with-egit-and-github
+http://stackoverflow.com/questions/4614370/problems-with-pushing-to-github-repository-from-eclipse-auth-fail
+https://bugs.eclipse.org/bugs/show_bug.cgi?id=311119
+http://www.eclipse.org/forums/index.php/mv/tree/198750/
+http://wiki.eclipse.org/EGit/User_Guide
+http://wiki.eclipse.org/EGit/User_Guide
+to chyba stąd powinienem zacząć naukę:
+http://www.vogella.de/articles/Git/article.html
