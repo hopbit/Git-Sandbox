@@ -1,0 +1,4 @@
+http://www.vogella.de/articles/EGit/article.html
+
+Utknąłem na 
+7.3. Push project to Github 
