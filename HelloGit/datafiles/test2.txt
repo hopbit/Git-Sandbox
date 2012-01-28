@@ -1,3 +1,4 @@
 a to jest jakas inna zmiana
 Bye, bye. Turn you radio off
 I added a remote repo
+This is a change, that I've made on clone of repository (sandbox/gitClone/HelloGit)
