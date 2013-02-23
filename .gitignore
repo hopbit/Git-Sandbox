@@ -1,13 +1,10 @@
-# PROJECTS 
+.classpath
+.metadata/
+.project
+.settings
+bin/
 EGitSandbox/
 HelloGit2/
+org.eclipse.jface.snippets/
 Spoon-Knife/
 VogellaEGitTutorial/
-org.eclipse.jface.snippets/
-# DIRECTORIES
-bin/
-# FILES
-.settings
-.metadata/
-.classpath
-.project
