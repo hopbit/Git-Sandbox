@@ -183,3 +183,14 @@ How to view changed lines that are on stage
 
 3.2.6
 =====
+
+How to commit files/changes?
+
+	# if you have already some files on stage area, then
+	git commit
+
+How to change git default editor
+
+	# settle vim
+	$ git config --global core.editor vim
+	# settle notepad (win)
