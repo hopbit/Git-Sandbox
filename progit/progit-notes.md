@@ -193,4 +193,6 @@ How to change git default editor
 
 	# settle vim
 	$ git config --global core.editor vim
-	# settle notepad (win)
+	# settle notepad++ (win)
+	$ git config --global core.editor npp
+	
