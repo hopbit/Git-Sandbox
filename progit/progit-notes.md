@@ -195,4 +195,31 @@ How to change git default editor
 	$ git config --global core.editor vim
 	# settle notepad++ (win)
 	$ git config --global core.editor npp
+
+How to view diff whilst doing commit?
+
+	# use command
+	git commit -v
 	
+3.2.7
+=====
+
+How to skip staging area on commiting files?
+
+	# it will automagically add all unstaged 
+	# changes/files to index just before commit
+	git commit -a
+	
+How to quickly provide message while creating commit?
+
+	git commit -m "Kapitan Bomba is on board"
+	
+3.2.8
+=====
+
+How to remove file both from workspace & from git index?
+
+	git rm README
+	git rm HelloWorld.java
+	
+	git status
