@@ -1,3 +1,3 @@
-current page in pdf: 20
+current page in pdf: 29
 
 workdir for this book is under directory: $workspace/git/progit/.
