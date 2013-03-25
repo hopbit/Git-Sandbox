@@ -1,32 +1,3 @@
-ch 2.5
-======
-
-config files:
-
-- /etc/gitconfig - file where configs are written/storred when using git config command with --system option
-- file ~/.gitcofig contains settings specify for your user. r/w to this file with --global option passed to 'git config' command
-- config file in your git directory (yourproject/.git/config) is specific to that single directory 
-
-each level overrides values in previous level
-
-2.5.1
-=====
-
-identity
-
-	$ git config --global user.name "Kapitan Bomba"
-	$ git config --global user.email "kapitan.bomba@polo.tv
-
-type git config without "--global" option if you want to have settings specific only for current repository (it'll write to project/.git/config file).
-
-2.5.2
-=====
-
-	# settle your editor for git
-	$ git config --global core.editor vim # or
-	$ git config --global core.editor emacs
-	$ git config --global core.editor notepad # at windows
-	$ git config --global core.editor notepad+
 
 2.5.3
 =====
@@ -36,16 +7,6 @@ type git config without "--global" option if you want to have settings specific 
 or: kdiff3, tkdiff, meld, xxdiff, emerge, vimdiff, gvimdiff, ecmerge, opendiff
 you can also setup a custom tool (fixme - how to do this???)
 
-2.5.4
-=====
-
-How to check/list git settings:
-
-	$ git config --list
-	
-	# check value for specific git config key
-	$ git config {key} # np.
-	$ git config user.email
 
 2.6
 ===
