@@ -14,7 +14,7 @@ you can also setup a custom tool (fixme - how to do this???)
 how to get help under git
 
 	# there are 3 ways of doing it:
-	$ git help [command]
+	$ git help [command] 
 	$ git [command] --help
 	$ man git-[command]
 
@@ -184,3 +184,189 @@ How to remove file both from workspace & from git index?
 	git rm HelloWorld.java
 	
 	git status
+	
+How to remove from index file that has been modified and added on staging area?
+
+	# use git rm with flag -f
+	# example workflow
+	echo "Do roboty tepe h***" >> README.md
+	git add -a
+	git rm -f README.md
+	git status
+	git commmit -m "README removed totally from git index & workspace"
+	
+How to remove file from git index but not from hard drive?
+
+	# use flag --cached, example:
+	git rm --cached README.md
+	git commit "file README.md dropped form index"
+	echo "README.md" >> .gitignore
+	git commit -a -m "since now README.md isn't tracked by git"
+	
+How to use file-glob patterns with git rm?
+
+	# this command will remove all files that 
+	# have .log extension in the log/ directory
+	git rm log/\*.log
+	
+	# this command will remove all files 
+	# that end with ~
+	git rm \*~
+
+3.2.9
+=====
+
+How to rename file in git?
+
+	git mv file_from file_to
+	
+It's a lil' bit confusing that git has git mv command.
+
+3.3
+===
+
+How to show log with diff/patch included?
+	
+	git log -p
+	
+How to limit git log command output?
+
+	# shows only last two commits
+	git log -2
+	
+	# shows only last 10 commits
+	git log -10
+	
+How to view short summary with changed files while viewing git history?
+
+	# print a list of modified files, how many files were 
+	# changed and how many lines in thos files where added 
+	# and removed below each commit entry 
+	git log --stat
+	git log --shortstat
+	
+How to show pretty commits history in git?
+
+	git log --pretty=oneline
+	git log --pretty=short
+	git log --pretty=full
+	git log --pretty=fuller
+	
+How to create custom format for git log?
+
+	#example
+	git log --pretty=format:"%h - %an, %ar : %s"
+	# my fav example
+	git log --pretty=format:"%h - %s"
+	
+	List of some options that format takes:
+	%H		(full) commit hash
+	%h		abbreviated commit hash
+	%T		tree hash
+	%t		abbreviated tree hash
+	%P		Parent hashes
+	%p		abbreviated parent hashes
+	%an		author name
+	%ae		author email
+	%ad		author date (format respects the -date= option)
+	%ar 	author date, relative
+	%cn		commiter name
+	%ce		commiter email
+	%cd		commiter date
+	%cr		commiter date, relative
+	%s		subject (commit message)
+
+	Author vs commiter - author is the person who 
+	originally wrote the work, whereas the commiter 
+	is the person who last applied the work
+	
+How to create nice graphical history log in git?
+
+	# use --graph option with git log
+	git log --graph
+	git log --pretty=format:"%h %s" --graph
+
+How to show list of changed files for some commits?
+
+	git log --name-only
+	
+How to show the list of files affected with added/modified/deleted information?
+
+	git log --name-status
+
+How to show short commit hashes in git history?
+
+	git log --abbrev-commit
+	
+How to display date in a relative fomat?
+
+	git log --relative-date
+	
+3.3.1
+=====
+
+How to show commits since 1 hour/day/week?
+
+	git log --since=1.day
+	git log --since=1.week
+	git log --since=1.hour
+	git log --since=2.months
+	git log --since=4.years
+	git log --since=1.year
+	git log --since=2012-12-01
+	
+How to show all commits of given author/commiter by name/email?
+
+	git log --author="kapitan.bomba@internet.tv
+	git log --commiter="kapitan.bomba@internet.tv
+	git log --author="Kapitan Bomba"
+	git log --commiter="Kapitan Bomba"
+	
+How to find in history all commits with some keyword?
+
+	git log --grep="keyword"
+	git log --grep="readme"
+	git log --grep="bugfix"
+	
+How to find commits of some author that contains specific keyword in commit message?
+
+	git log --author="kapitan.bomba@internet.tv --grep="fix"
+	
+How to show/find all commits that are about given file/dir?
+
+	git log -- README
+	git log -- src/java
+	git log -- doc/
+	
+How to show all commits between given date?
+
+	git log --after=2012-09-01 --before=2012-10-01
+	git log --since=2012-09-01 --until=2012-10-01
+	git log --after=2012=09-01 --until=2012-10-01
+	git log --since=2012=09-01 --before=2012-10-01
+	
+3.3.2
+=====
+
+How to view commits history in GUI?
+
+	gitk
+	
+	Remember that You can pass to gitk tool almost 
+	all filters that are suitable for git log.
+	
+3.4.1
+=====
+
+How to change your last commit?
+
+	git commit --amend
+	
+	
+3.4.2
+=====
+
+How to unstage staged file?
+
+	git reset HEAD file_to_unstage.txt
+	
