@@ -370,3 +370,22 @@ How to unstage staged file?
 
 	git reset HEAD file_to_unstage.txt
 	
+3.4.3
+=====
+
+How to unmodify a modified file?
+
+	# WATCH OUT! this will remove all 
+	# changes you've made to your file
+	git checkout -- file-to-unmodify
+	
+3.5.1
+=====
+
+How to show remotes (short names)?
+
+	git remote
+	
+How to show remotes with repos URLs?
+
+	git remote -v
