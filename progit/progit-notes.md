@@ -1,11 +1,4 @@
 
-2.5.3
-=====
-
-	$ git config --global merge.tool vimdiff
-
-or: kdiff3, tkdiff, meld, xxdiff, emerge, vimdiff, gvimdiff, ecmerge, opendiff
-you can also setup a custom tool (fixme - how to do this???)
 
 
 2.6
