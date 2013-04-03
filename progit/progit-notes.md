@@ -1,19 +1,4 @@
 
-
-
-2.6
-===
-
-how to get help under git
-
-	# there are 3 ways of doing it:
-	$ git help [command] 
-	$ git [command] --help
-	$ man git-[command]
-
-irc: channels #git & #github
-server: irc.freenode.net
-
 3.3.1
 =====
 
